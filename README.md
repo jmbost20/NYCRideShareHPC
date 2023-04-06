@@ -19,3 +19,8 @@ Potential Project Focus/Questions:
     - How many rides does the average driver do in a day?
     - How much are they making?
     - Do drivers that drive more often get more tips?
+- Ride Identification
+    - Which license plates are the most frequent drivers?
+    - What time in the day do high frequency cars drive?
+    - When do low frequency cars drive in the day?
+   
