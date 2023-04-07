@@ -4,12 +4,12 @@ Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
 ### Proposal- Returnables
-* code to read data; 
-* descriptions of the variables
-* statistical methods
-* computational steps you will use
-* link to your github repository. 
-* Turn in a proposal.html (knitted from proposal.Rmd or from some
+- [X] code to read data; 
+- [ ] descriptions of the variables
+- [ ] statistical methods
+- [ ] computational steps you will use
+- link to your github repository. 
+- Turn in a proposal.html (knitted from proposal.Rmd or from some
 other source) or a proposal.pdf.
 
 ### Computation
