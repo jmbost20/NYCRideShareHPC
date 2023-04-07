@@ -33,6 +33,7 @@ other source) or a proposal.pdf.
         - Are Uber or Lyft drivers more likely to get a tip?
 - Focus on Supply/Demand
     - When are prices surging and why?
+	-any particular regions?
     - Where in NYC are Ubers/Lyfts being called most frequently?
     - Are there any areas that drivers avoid/cancel more frequently?
     - How long (distance and time) are most trips?
