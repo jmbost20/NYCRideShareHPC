@@ -2,6 +2,15 @@
 
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
+### Computation
+1. Data Collection- pull Data from Kaggle (wget)
+2. Data Cleaning- Convert all Parquet files to CSV
+* Create some metrics for data conversion to ensure that no data is lost
+3. Potentially some Feature Engineering
+4. 
+*Alternatively we could manipulate the Parquet files in their current state, but that could be risky as we have less familiarity 
+
+
 Potential Project Focus/Questions:
 
 - Focus on Lyft vs. Uber
