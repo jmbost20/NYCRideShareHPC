@@ -37,7 +37,6 @@ write.csv(df, file = csv_file, row.names = FALSE)
 
 # Statistical Methods
 
-* Data Analysis
-** Which company performs best
+* Data Analysis- Which company performs best
 * Regression
 
