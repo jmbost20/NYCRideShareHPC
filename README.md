@@ -8,6 +8,7 @@ https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 - [ ] descriptions of the variables
 - [ ] statistical methods
 - [ ] computational steps you will use
+##### TURN IN:
 - link to your github repository. 
 - Turn in a proposal.html (knitted from proposal.Rmd or from some
 other source) or a proposal.pdf.
