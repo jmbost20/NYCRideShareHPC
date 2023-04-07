@@ -52,11 +52,15 @@ write.csv(df, file = csv_file, row.names = FALSE)
 # Variables
 
 
-# Statistical Methods
+## Statistical Methods
 
-* Data Analysis- Which company performs best
-* Regression
+### Data Analysis:
+* Creating graphs that focus on displaying differences in driver pay and performance for each ride-sharing service
+* Creating graphs that display correlation between certain variables and driver pay
 
+### Regression:
+* Using linear regression to identify the variables that have the largest impact on driver pay
+* Will implement regression lines into analysis graphs to show relationship between variables and driver pay
 
 
 # Computational Steps 
