@@ -3,15 +3,40 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-
 # Code to Read In
+
+### Code for Wget Files
+
+2 Shell Scripts for Reading Files
+* Submit.sh
+* getData.sh
+
+__Code from getData.sh__
+#!/bin/bash
+
+n=$SLURM_ARRAY_TASK_ID
+
+
+numid=$((2018+$n))
+
+for i in 01 02 03 04 05 06 07 08 09 10 11 12
+do
+#if ($i <= 9)
+#then
+#wget https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_$numid-0$i.parquet
+#else
+wget https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_$numid-$i.parquet
+#fi
+done
+
+### Converting Parquet to CSV
+
 ```{r}
 install.packages("arrow")
 
 library(arrow)
 
 ```
-
 
 ```{r}
 parquet_file <- "fhvhv_tripdata_2020-05.parquet"
@@ -23,7 +48,6 @@ csv_file <- "fhvhv.csv"
 write.csv(df, file = csv_file, row.names = FALSE)
 
 ```
-
 
 # Variables
 
