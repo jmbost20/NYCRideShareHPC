@@ -3,18 +3,8 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
-
-
-# Computation
-* Data Collection- pull Data from Kaggle (wget)
-* Data Cleaning- Convert all Parquet files to CSV (Create some metrics for data conversion to ensure that no data is lost)
-* Potentially some Feature Engineering
-* Questions- begin to create code to address questions
-* Pick one question for proposal
-
+# Code to Read In
 ```{r}
 install.packages("arrow")
 
@@ -47,4 +37,9 @@ write.csv(df, file = csv_file, row.names = FALSE)
 
 # Computational Steps 
 
+* Data Collection- pull Data from Kaggle (wget)
+* Data Cleaning- Convert all Parquet files to CSV (Create some metrics for data conversion to ensure that no data is lost)
+* Potentially some Feature Engineering
+* Questions- begin to create code to address questions
+* Pick one question for proposal
 
