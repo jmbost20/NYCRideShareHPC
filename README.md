@@ -22,7 +22,7 @@ other source) or a proposal.pdf.
 *Alternatively we could manipulate the Parquet files in their current state, but that could be risky as we have less familiarity 
 
 
-Potential Project Focus/Questions:
+### Potential Project Focus/Questions:
 
 - Focus on Lyft vs. Uber
     - Which has the higher prices/more likely to surge price?
