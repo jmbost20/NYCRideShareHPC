@@ -11,7 +11,7 @@ output: html_notebook
 * Submit.sh
 * getData.sh
 
-__Code from getData.sh__
+### Code from getData.sh
 #!/bin/bash
 
 n=$SLURM_ARRAY_TASK_ID
