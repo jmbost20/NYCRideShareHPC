@@ -35,8 +35,16 @@ write.csv(df, file = csv_file, row.names = FALSE)
 ```
 
 
+# Variables
+
+
 # Statistical Methods
 
 * Data Analysis- Which company performs best
 * Regression
+
+
+
+# Computational Steps 
+
 
