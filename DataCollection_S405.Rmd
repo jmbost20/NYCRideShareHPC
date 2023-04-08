@@ -5,6 +5,7 @@ output: html_notebook
 # Group Members
 Peter Harmer
 Abhimanyu Dev Gupta
+Jonah Bostrom
 
 
 # Github Repository
