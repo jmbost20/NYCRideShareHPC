@@ -84,19 +84,15 @@ What values produce the most profit for the driver?
 ## Statistical Methods
 
 ### Data Analysis:
-* Create graphs that focus on displaying differences in driver pay and performance for each ride-sharing service
-* Create graphs that display correlation between certain variables and driver pay
+To depict our analyses we will create graphs that display the difference in driver pay and performance between different companies/services,
+as well as display the correllation between different variables and driver pay
 
 ### Regression:
-* Use linear and/or Polynomial regression to identify the variables that have the largest impact on driver pay.
-* Implement regression lines into analysis graphs to show a visual relationship between different variables and driver pay.
+We plan to use linear and/or Polynomial regression to identify the variables that have the largest impact on a drivers pay/profit.
+Additionally, on the graphs depicting our analysis we will add regression lines to visually show the relationship between different variables and driver pay.
 
 
 # Computational Steps 
-
-* Data Collection- pull Data from Kaggle (wget)
-* Data Cleaning- Convert all Parquet files to CSV (Create some metrics for data conversion to ensure that little to no data is lost)
-* Process data by individual year and/or month (or if need be even more granularly) using HPC. This could include removing unecessary variables, sorting the data by a variable like company.
-* Potentially some Feature Engineering
-* Questions- Create code to address the primary question and sub questions using the now processed data
-
+To accomplish this we will pull our data from Kaggle (wget), convert it from Parquet format to CSV while ensuring little to no data is lost,
+process it into year, month, and/or company blocks using the HPC. This processing could include pruning unecessary variables or sorting the data.
+We may also perform some featuring engineering if required. Finally we will create code to address the primary and sub questions using the now processed and cleaned data.
