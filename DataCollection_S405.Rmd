@@ -59,7 +59,17 @@ write.csv(df, file = csv_file, row.names = FALSE)
 ```
 
 # Variables
-
+* Tips: This variable measures the total tip recieved by the driver from the customer. 
+* trip_miles: This variable simply measures the length of the trip in miles. 
+* tolls: This variable simply measures the amount paid in tolls in the trip.
+* driver_pay: This measures the total pay the driver recieves, not including tolls, tips, taxes or surcharges. 
+* sales_tax: The NYC sales tax levied on each trip. 
+* congestion_surcharge: The amount collected for congestion surcharge. 
+* Pickup_datetime: This represents the date and time of the pickup.
+* DropOff_datetime: This represents the date and time of the drop off.
+* request_datetime: The time the customer requested to be picked up. 
+* on_scene_datetime: The time the driver arrived at the pickup location.
+* There are many more variables, however at this point these seem the most relevant to our question.
 
 ## Statistical Methods
 
