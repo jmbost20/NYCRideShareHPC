@@ -2,8 +2,17 @@
 title: "R Notebook"
 output: html_notebook
 ---
+# Group Members
+Peter Harmer
 
-# Code to Read In
+
+# Github Repository
+https://github.com/jmbost20/Stat405Project
+
+# Data Source
+https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
+
+# Code Snippets
 
 ### Code for Wget Files
 
@@ -59,15 +68,15 @@ write.csv(df, file = csv_file, row.names = FALSE)
 * Creating graphs that display correlation between certain variables and driver pay
 
 ### Regression:
-* Using linear regression to identify the variables that have the largest impact on driver pay
+* Using linear and/or Polynomial regression to identify the variables that have the largest impact on driver pay
 * Will implement regression lines into analysis graphs to show relationship between variables and driver pay
 
 
 # Computational Steps 
 
 * Data Collection- pull Data from Kaggle (wget)
-* Data Cleaning- Convert all Parquet files to CSV (Create some metrics for data conversion to ensure that no data is lost)
+* Data Cleaning- Convert all Parquet files to CSV (Create some metrics for data conversion to ensure that little to no data is lost)
 * Potentially some Feature Engineering
-* Questions- begin to create code to address questions
+* Questions- Create code to address questions
 * Pick one question for proposal
 
