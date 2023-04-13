@@ -6,7 +6,7 @@ output: html_notebook
 Peter Harmer
 Abhimanyu Dev Gupta
 Jonah Bostrom
-
+Charlie May
 
 # Github Repository
 https://github.com/jmbost20/Stat405Project
