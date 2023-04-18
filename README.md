@@ -34,6 +34,10 @@ https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 - [X] computational steps you will use
 
 ### Computation
+- Every member tackles one question
+- __for now__ use the dummy csv in Rmd to tackle your questions and any notes about data cleaning
+- Then we'll all work together on parallizing
+
 1. Data Collection- pull Data from Kaggle (wget)
 2. Data Cleaning- Convert all Parquet files to CSV (Create some metrics for data conversion to ensure that no data is lost)
 3. _Potentially some Feature Engineering_
