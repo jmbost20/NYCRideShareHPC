@@ -3,11 +3,6 @@
 Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
-### Proposal- Returnables
-- [X] code to read data; 
-- [ ] descriptions of the variables
-- [ ] statistical methods
-- [ ] computational steps you will use
 
 ##### TURN IN:
 - Report (750 pages) [intro, body, conclusion]
@@ -17,6 +12,19 @@ https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
 
 
+
+## Proposal- Returnables
+- [X] code to read data; 
+- [ ] descriptions of the variables
+- [ ] statistical methods
+- [ ] computational steps you will use
+
+### Computation
+1. Data Collection- pull Data from Kaggle (wget)
+2. Data Cleaning- Convert all Parquet files to CSV (Create some metrics for data conversion to ensure that no data is lost)
+3. _Potentially some Feature Engineering_
+4. Questions- begin to create code to address questions
+* Pick one question for proposal
 
 ### Potential Project Focus/Questions:
 
