@@ -4,9 +4,11 @@ Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
 
+## Final
+
 ##### TURN IN:
 - Report (750 pages) [intro, body, conclusion]
--
+- Presentation
 
 
 
