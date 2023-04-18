@@ -3,6 +3,10 @@
 Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
+### Questions
+How do you make use of/download R packages on the HPC. Arrow
+ in particular.
+
 
 ## Final
 
