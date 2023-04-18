@@ -17,6 +17,11 @@ https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 Work Split
 - Data Input
 - Questions
+	-What values produce the most profit for the driver?
+	- Does a particular company/app have better payed drivers?
+	- Is any particular time of year better than another?
+	- Does length of trip actually have an affect on profit?
+	- Does the time of year affect profit?
 
 
 
