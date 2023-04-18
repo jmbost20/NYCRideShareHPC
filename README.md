@@ -7,8 +7,10 @@ https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 ## Final
 
 ##### TURN IN:
+- Code
 - Report (750 pages) [intro, body, conclusion]
-- Presentation
+- Presentation (~4 Minutes)
+- Peer Review
 
 
 
