@@ -7,6 +7,12 @@ https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 How do you make use of/download R packages on the HPC. Arrow
  in particular.
 
+## Timeline
+
+- April 23rd: figure out basic paths for answering assigned questions in Rstudio
+- April 27th: complete Parallelization
+- May 1st: Have everything turned in
+
 
 ## Final
 
