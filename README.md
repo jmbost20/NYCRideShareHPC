@@ -6,22 +6,26 @@ https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
 ## Final
 
+##### Finish By: May 1st
+
 ##### TURN IN:
 - Code
 - Report (750 pages) [intro, body, conclusion]
 - Presentation (~4 Minutes)
 - Peer Review
 
-
+Work Split
+- Data Input
+- Questions
 
 
 
 
 ## Proposal- Returnables
 - [X] code to read data; 
-- [ ] descriptions of the variables
-- [ ] statistical methods
-- [ ] computational steps you will use
+- [X] descriptions of the variables
+- [X] statistical methods
+- [X] computational steps you will use
 
 ### Computation
 1. Data Collection- pull Data from Kaggle (wget)
