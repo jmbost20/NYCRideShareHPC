@@ -15,7 +15,8 @@ https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 - Peer Review
 
 ### Work Split
-- Data Input
+- Data Download
+- Converting parquet to CSV
 - Questions
 	-What values produce the most profit for the driver?
 	1. Does a particular company/app have better payed drivers?
