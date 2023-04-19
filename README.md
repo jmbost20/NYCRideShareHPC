@@ -4,8 +4,10 @@ Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
 ### Questions
-How do you make use of/download R packages on the HPC. Arrow
- in particular.
+- **How do you make use of/download R packages on the HPC. Arrow
+ in particular.**
+- **Check that github is shared**
+ 
 
 ## Timeline
 
@@ -16,8 +18,6 @@ How do you make use of/download R packages on the HPC. Arrow
 
 ## Final
 
-##### Finish By: May 1st
-
 ##### TURN IN:
 - Code
 - Report (750 pages) [intro, body, conclusion]
@@ -25,25 +25,24 @@ How do you make use of/download R packages on the HPC. Arrow
 - Peer Review
 
 ### Work Split
+There are 2 things we need to be working on- Exploratory analysis on the dummy data set and parallelization work using HPC. We should be working on these in tandem.
 
-#### Steps:
-- Every member tackles one question
-- __for now__ use the dummy csv in Rmd to tackle your questions and any notes about data cleaning
-- Then we'll all work together on parallizing
-
-#### Split
-- Data Download
+#### Parallization
+- Data Download w wget
 - Converting parquet to CSV
+- Running all exploratory analysis across all files
+
+#### Exploratory Analysis
 - Questions
-	-What values produce the most profit for the driver?
-	1. Does a particular company/app have better payed drivers?
-	2. Is any particular time of year better than another?
-	3. Does length of trip actually have an affect on profit?
-	4. Does the time of year affect profit?
+	-What values produce the most profit for the driver? 
+	1. Does a particular company/app have better payed drivers? -Jonah
+	2. Is any particular time of year better than another? -Abhi
+	3. Does length of trip actually have an affect on profit? -Peter or Charlie
+	4. Does the time of year affect profit? -Peter or Charlie
 
 
 
-
+# Previous
 ## Proposal- Returnables
 - [X] code to read data; 
 - [X] descriptions of the variables
