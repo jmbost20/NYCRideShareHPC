@@ -37,8 +37,8 @@ There are 2 things we need to be working on- Exploratory analysis on the dummy d
 	-What values produce the most profit for the driver? 
 	1. Does a particular company/app have better payed drivers? -Jonah
 	2. Is any particular time of year better than another? -Abhi
-	3. Does length of trip actually have an affect on profit? -Peter or Charlie
-	4. Does the time of year affect profit? -Peter or Charlie
+	3. Does length of trip actually have an affect on profit? -Peter
+	4. Does the time of year affect profit? -Charlie
 
 
 
