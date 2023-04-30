@@ -19,4 +19,12 @@ if (!require("arrow")) { # If loading package fails ...
   stopifnot(require("arrow")) # If loading still fails, quit
 }
 
-print("Success")
+print("Success Stage 1")
+
+file_names <- list.files(pattern = "\\.parquet$")
+
+for(file in file_names){
+file_data = read_parquet(file, as_data_frame = TRUE)
+file_new = substr(file, 1, nchar(file)-8)
+write_csv(file_data,file = file_new)
+}
