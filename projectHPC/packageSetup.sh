@@ -6,3 +6,5 @@ RpackagesDir="R/library" # the R script will install packages here
 mkdir --parents "$RpackagesDir" # make directory & parents; no error if exists
 
 Rscript parToCsv.R "$RpackagesDir"
+
+rm -f *.parquet

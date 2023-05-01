@@ -18,7 +18,10 @@ jobId2=$(sbatch --output="slurm_out/slurm-%A_%a.out" \
 
 jobId2=$(echo $jobId2 | sed 's/Submitted batch job //')
 
-jobId3=$(sbatch --output="slurm_out/slurm-%A_%a.out" \
+jobId3=$(sbatch  --array=1-4\
+		  --output="slurm_out/slurm-%A_%a.out" \
                  --error="slurm_out/slurm-%A_%a.err" \
                  --dependency=afterok:$jobId2 \
-                ./packageSetup.sh)
+                ./q3.sh)
+
+jobId3=$(echo $jobId3 | sed 's/Submitted batch job //')
