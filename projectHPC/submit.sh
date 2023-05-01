@@ -11,17 +11,18 @@ jobId1=$(sbatch --array=1-4\
 
 jobId1=$(echo $jobId1 | sed 's/Submitted batch job //')
 
-jobId2=$(sbatch --output="slurm_out/slurm-%A_%a.out" \
-                 --error="slurm_out/slurm-%A_%a.err" \
-		 --dependency=afterok:$jobId1 \
+jobId2=$(sbatch --array=1-4\
+		--output="slurm_out/slurm-%A_%a.out" \
+                --error="slurm_out/slurm-%A_%a.err" \
+		--dependency=afterok:$jobId1 \
                 ./packageSetup.sh)
 
 jobId2=$(echo $jobId2 | sed 's/Submitted batch job //')
 
-jobId3=$(sbatch  --array=1-4\
-		  --output="slurm_out/slurm-%A_%a.out" \
-                 --error="slurm_out/slurm-%A_%a.err" \
-                 --dependency=afterok:$jobId2 \
+jobId3=$(sbatch --array=1-4\
+		--output="slurm_out/slurm-%A_%a.out" \
+                --error="slurm_out/slurm-%A_%a.err" \
+                --dependency=afterok:$jobId2 \
                 ./q3.sh)
 
 jobId3=$(echo $jobId3 | sed 's/Submitted batch job //')

@@ -2,11 +2,13 @@
 
 rm(list=ls())
 
-args = (commandArgs(trailingOnly=TRUE))
-if(length(args) == 1){
+args = commandArgs(trailingOnly=TRUE)
+print(args)
+if(length(args) == 2){
   RpackagesDir = args[1]
+  file = args[2]
 } else {
-  cat('usage: Rscript test.R <RpackagesDir>\n', file=stderr())
+  cat('usage: Rscript test.R <RpackagesDir> <file>\n', file=stderr())
   stop()
 }
 
@@ -19,12 +21,8 @@ if (!require("arrow")) { # If loading package fails ...
   stopifnot(require("arrow")) # If loading still fails, quit
 }
 
-print("Success Stage 1")
-
-file_names <- list.files(pattern = "\\.parquet$")
-
-for(file in file_names){
 file_data = read_parquet(file, as_data_frame = TRUE)
 file_new = substr(file, 1, nchar(file)-8)
-write_csv(file_data,file = file_new)
-}
+write.csv(file_data,file = file_new)
+
+print("Success Stage 1")
