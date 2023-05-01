@@ -1,19 +1,5 @@
----
-title: "stat405dummy"
-output: html_document
----
+#!/usr/bin/Rscript
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r}
 data <- read.csv("dummydata.csv",header = FALSE)
 head(data)
 #data$V10[0]
@@ -22,9 +8,9 @@ miles <- c()
 driverpay <- c()
 miles <- data$V10
 driverpay <- data$V19
-```
 
-```{r}
+
+
 dates <- c()
 profit <- c()
 datalen <- nrow(data)
@@ -45,13 +31,9 @@ for (i in 1:datalen-1) {
 }
 
 dates <- dates[2:length(dates)]
-```
 
-```{r}
 dates <- substr(dates, 6, 7)
-```
 
-```{r}
+
 distribution <- tapply(profit, dates, mean)
 distribution
-```
