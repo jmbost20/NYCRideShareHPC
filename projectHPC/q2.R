@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript
+
 data <- read.csv("dummydata.csv",header = FALSE)
 head(data)
 #data$V10[0]
