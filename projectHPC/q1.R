@@ -2,16 +2,32 @@
 
 rm(list=ls())
 
+args = (commandArgs(trailingOnly=TRUE))
+if(length(args) == 2){
+  RpackagesDir = args[1]
+  file = args[2]
+} else {
+  cat('usage: Rscript q1.R <file>\n', file=stderr())
+  stop()
+}
 
 
-# Load the necessary libraries
-library(dplyr)
+# Tell R to search in RpackagesDir, in addition to where it already
+# was searching, for installed R packages.
+.libPaths(new=c(RpackagesDir, .libPaths()))
+if (!require("dplyr")) { # If loading package fails ...
+  # Install package in RpackagesDir.
+  install.packages(pkgs="dplyr", lib=RpackagesDir, repos="https://cran.r-project.org")
+  stopifnot(require("dplyr")) # If loading still fails, quit
+}
+
+
 
 # Set the working directory
-setwd("/path/to/directory/containing/dummydata.csv")
+#setwd("/path/to/directory/containing/dummydata.csv")
 
 # Read in the data
-my_data <- read.csv("dummydata.csv")
+my_data <- read.csv(file)
 
 # Print the data
 print(my_data)
