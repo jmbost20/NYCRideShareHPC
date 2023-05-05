@@ -1,0 +1,95 @@
+---
+title: "dummyRMDq4"
+output: html_document
+date: "2023-04-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+#data1 <- read.csv("dummydata.csv",header = TRUE)
+#data <- read.csv("dummy2.csv",header = TRUE)
+#data2 <- read.csv("dummy3.csv",header = TRUE)
+#data2 <- data2[, -1]
+
+#install.packages("arrow")
+library(arrow)
+
+df1 <- read_parquet("fhvhv_tripdata_2019-05.parquet")
+df2 <- read_parquet("fhvhv_tripdata_2019-06.parquet")
+#df3 <- read_parquet("fhvhv_tripdata_2019-09.parquet")
+#df4 <- read_parquet("fhvhv_tripdata_2019-11.parquet")
+```
+```{r}
+#merged_file <- rbind(df1, df2)
+#head(merged_file)
+```
+##useful data
+
+```{r}
+
+
+library(dplyr)
+library(ggplot2)
+
+q4data <- df1[, c('pickup_datetime', 'driver_pay', 'trip_miles')]
+q4data$profit_per_mile <- q4data$driver_pay / q4data$trip_miles
+#q4data$time <- substr(q4data$pickup_datetime, 11, 16)
+#q4data$time <- format(as.POSIXct(q4data$pickup_datetime), "%H:%M")
+q4data$time <- as.POSIXct(q4data$pickup_datetime)
+q4data$intervals <- cut(q4data$time, breaks = "30 min")
+q4data$time_label <- format(as.POSIXct(q4data$intervals), "%H:%M")
+
+
+#group_df <- q4data %>%
+ # group_by(time) %>%
+  #summarize(avg_pay = mean(driver_pay) , avg_pay_by_mile = mean(profit_per_mile))
+
+q4data <- na.omit(q4data)
+q4data$profit_per_mile[is.infinite(q4data$profit_per_mile)] <- NA
+
+
+group_df <- q4data %>%
+  group_by(time_label) %>%
+  summarize(avg_pay = mean(driver_pay) , avg_pay_by_mile = mean(profit_per_mile, na.rm = TRUE))
+
+#group_df
+
+ggplot(group_df, aes(x = time_label, y = avg_pay_by_mile, group = 1)) +
+  geom_point(size = 1) +
+  geom_line() +
+  scale_x_discrete(labels =  group_df$time_label) +
+  labs(x = "Time of Day", y = "Avg. Driver Pay by Mile", title = "Average Driver Pay by Time of Day") +
+  theme(axis.title.x = element_text(size = 12), axis.title.y = element_text(size = 12), axis.text.x = element_text(angle =90, size = 7), axis.text.y = element_text(size = 11))
+  
+  
+#any(is.infinite(q4data$profit_per_mile))
+
+#plot(group_df$intervals, group_df$avg_pay_by_mile, type = 'b')
+```
+
+
+```{r}
+# Create a sample datetime string
+datetime_str <- "2022-04-24 10:30:00"
+
+# Convert to datetime using as.POSIXct()
+datetime_ct <- as.POSIXct(datetime_str, format = "%Y-%m-%d %H:%M:%S")
+
+# Convert to datetime using as.POSIXlt()
+datetime_lt <- as.POSIXlt(datetime_str, format = "%Y-%m-%d %H:%M:%S")
+
+# View the output of each conversion
+datetime_ct
+datetime_lt
+
+
+```
