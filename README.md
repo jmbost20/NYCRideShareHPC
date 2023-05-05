@@ -4,7 +4,8 @@ Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
 How to clone:
-git clone https://github.com/<ID>/DSCPproject.git
+git clone git@github.com:jmbost20/Stat405Project.git
+*run this on terminal/ command line
 
 ### Questions
 - **How do you make use of/download R packages on the HPC. Arrow
