@@ -9,10 +9,7 @@ git clone git@github.com:jmbost20/Stat405Project.git
 
 *run this on terminal/ command line
 
-### Questions
-- **How do you make use of/download R packages on the HPC. Arrow
- in particular.**
-- **Check that github is shared**
+
  
 
 ## Timeline
