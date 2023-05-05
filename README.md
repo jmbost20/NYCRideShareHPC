@@ -3,6 +3,9 @@
 Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
+How to clone:
+git clone https://github.com/<ID>/DSCPproject.git
+
 ### Questions
 - **How do you make use of/download R packages on the HPC. Arrow
  in particular.**
