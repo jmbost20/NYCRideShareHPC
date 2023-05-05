@@ -4,7 +4,9 @@ Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
 
 How to clone:
+
 git clone git@github.com:jmbost20/Stat405Project.git
+
 *run this on terminal/ command line
 
 ### Questions
