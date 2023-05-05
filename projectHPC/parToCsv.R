@@ -4,11 +4,11 @@ rm(list=ls())
 
 args = commandArgs(trailingOnly=TRUE)
 print(args)
-if(length(args) == 2){
+if(length(args) == 1){
   RpackagesDir = args[1]
-  file = args[2]
+  #file = args[2]
 } else {
-  cat('usage: Rscript test.R <RpackagesDir> <file>\n', file=stderr())
+  cat('usage: Rscript test.R <RpackagesDir>\n', file=stderr())
   stop()
 }
 
@@ -21,8 +21,17 @@ if (!require("arrow")) { # If loading package fails ...
   stopifnot(require("arrow")) # If loading still fails, quit
 }
 
-file_data = read_parquet(file, as_data_frame = TRUE)
-file_new = substr(file, 1, nchar(file)-8)
-write.csv(file_data,file = file_new)
+
+
+files <- list.files(pattern = "\\.parquet$")
+
+
+storage_dat = data.frame()
+for(file in files){
+file_dat = read_parquet(file, as_data_frame = TRUE)
+storage_dat = merge(storage_dat,file_dat)
+}
+
+write_parquet(storage_dat, "merged_taxi.parquet")
 
 print("Success Stage 1")
