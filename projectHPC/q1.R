@@ -21,11 +21,6 @@ if (!require("dplyr")) { # If loading package fails ...
   stopifnot(require("dplyr")) # If loading still fails, quit
 }
 
-
-
-# Set the working directory
-#setwd("/path/to/directory/containing/dummydata.csv")
-
 # Read in the data
 my_data <- read.csv(file)
 
