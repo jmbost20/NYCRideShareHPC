@@ -1,4 +1,4 @@
-# Stat405Project
+# NYC Ride Share Project
 
 Data:
 https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data
